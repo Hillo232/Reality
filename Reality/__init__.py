@@ -5,7 +5,7 @@ import psutil
 
 
 
-print(sys.platform)
+
 def platform():
   return sys.platform
 def timestamp():
@@ -13,8 +13,8 @@ def timestamp():
   tc=calendar.timegm(t)
   return tc
 def py():
-  return sys.version()
-def __running__(processName):
+  return sys.version
+def running(processName):
     '''
     Check if there is any running process that contains the given name processName.
     '''
@@ -25,3 +25,10 @@ def __running__(processName):
         except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
           pass
     return False
+def group(obj:list or tuple,seperator:str):
+  return seperator.join(obj)
+def allapps():
+  lst=[]
+  for proc in psutil.process_iter():
+    lst.append(proc.name())
+  return lst
