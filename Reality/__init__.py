@@ -29,6 +29,10 @@ def group(obj:list or tuple,seperator:str):
   return seperator.join(obj)
 def allapps():
   lst=[]
-  for proc in psutil.process_iter():
-    lst.append(proc.name())
+  try:
+    for proc in psutil.process_iter():
+      lst.append(proc.name())
+  except:
+    pass
   return lst
+print(allapps())
