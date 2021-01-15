@@ -35,4 +35,3 @@ def allapps():
   except:
     pass
   return lst
-print(allapps())
