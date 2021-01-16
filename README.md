@@ -1,17 +1,17 @@
-#Reality
+#RealitySix
 
 Get you platform:
 
 ```py
-import Reality
+import RealitySix
 
-print(Reality.platform())
+print(RealitySix.platform())
 ```
 
 See if a proccess is running:
 
 ```py
-import Reality as r
+import RealitySix as r
 
 if r.running("terminal"):
   print("Terminal is running!")
@@ -22,7 +22,7 @@ else:
 Get timestamp:
 
 ```py
-import Reality as r
+import RealitySix as r
 
 print(str(r.timestamp()))
 ```
