@@ -71,3 +71,4 @@ class exe:
             os.system("python3")
         except:
             os.system("python")
+executable=exe()
