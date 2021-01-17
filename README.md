@@ -26,3 +26,5 @@ import RealitySix as r
 
 print(str(r.timestamp()))
 ```
+
+[Documentation](https://reality-six-docs.herokuapp.com/Docs/index.html)
